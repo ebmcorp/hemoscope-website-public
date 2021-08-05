@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61875225-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-61875225-1');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>hemoscope 脳動脈CFD血流解析研究支援ソフトウェア</title>
+    <meta name="description" content="hemoscopeは数値流体力学CFDによる血流解析ソフトウェアです。ワークステーション上でCFD血流解析シミュレーションを実現します。">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+
+<body>
+    <section class="hero is-info is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+
+                <div class="columns site-title-container is-vcentered">
+                    <div class="column is-4 has-text-left">
+                        <figure class="image is-square">
+                            <img src="./images/logo_hemoscope.png" alt="hemoscope">
+                        </figure>
+                    </div>
+                    <div class="column is-8 has-text-left">
+                        <h1 class="title has-text-light">
+                            脳動脈CFD血流解析研究支援ソフトウェア<br>
+                            hemoscope®
+                        </h1>
+                        <p class="has-text-grey-light">
+                            A scope for hemodynamics, <br>
+                            all-in-one specialized CFD software for blood flow
+                        </p>
+                    </div>
+                </div>
+
+                <h2 class="title title-margin has-text-primary">
+                    hemoscope: 血流研究のためのプラットフォーム
+                </h2>
+
+                <div class="columns">
+                    <div class="column is-10 is-offset-1 has-text-left">
+                        <p>
+                            hemoscope® （ヘモスコープ）は脳動脈の血流研究の支援を目的として開発された、数値流体力学CFDによる血流解析シミュレーションソフトウェアです。
+                            直感的な操作によってCFDを実行し、Wall Shear Stress （壁面せん断応力）や Streamline （流線）
+                            などの血行動態情報を定量化・可視化することができます。
+                        </p>
+                    </div>
+                </div>
+
+                <h2 class="title title-margin has-text-primary">
+                    News
+                </h2>
+
+                <div class="columns">
+                    <div class="column is-9 is-offset-3 has-text-left">
+                        <ul>
+                            <li class="has-text-primary has-text-weight-medium is-size-5">2021年2月：　バージョン 2.1.2　をリリースしました</li>
+                            <li class="has-text-grey-light">2019年9月：　バージョン 2.1.1　をリリースしました</li>
+                            <li class="has-text-grey-light">2019年6月：　バージョン 2.1.0　をリリースしました</li>
+                            <li class="has-text-grey-light">2018年9月：　バージョン 2.0.0　をリリースしました</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <p class="has-text-grey-light">
+                    各アップデートの詳細については、お問い合わせをお願いいたします。
+                </p>
+
+                <h2 class="title title-margin has-text-primary">
+                    Gallery
+                </h2>
+
+                <div class="columns is-multiline">
+
+                    <div class="column is-half">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-5by3">
+                                    <img src="./images/OverView_02.jpg" alt="">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-footer-item">
+                                    直感的なユーザーインターフェース
+                                </p>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <div class="column is-half">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-5by3">
+                                    <img src="./images/OverView_03.jpg" alt="">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-footer-item">
+                                    Streamline と Wall Shear Stress (Magnitude) の比較
+                                </p>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <div class="column is-half">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-5by3">
+                                    <img src="./images/BAtip_04.jpg" alt="">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-footer-item">
+                                    Wall Shear Stress (Direction)
+                                </p>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <div class="column is-half">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-5by3">
+                                    <img src="./images/ACOM_02.jpg" alt="">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-footer-item">
+                                    Streamline
+                                </p>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <div class="column is-half">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-5by3">
+                                    <img src="./images/ICgiant_01.jpg" alt="">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-footer-item">
+                                    Streamline
+                                </p>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <div class="column is-half">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-5by3">
+                                    <img src="./images/M1tip_04.jpg" alt="">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-footer-item">
+                                    Wall Shear Stress (Magnitude and Direction)
+                                </p>
+                            </footer>
+                        </div>
+                    </div>
+
+
+                    <div class="column is-half">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-5by3">
+                                    <img src="./images/WSS01s.jpg" alt="">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-footer-item">
+                                    Wall Shear Stress の高度な分析機能
+                                </p>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <div class="column is-half">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-5by3">
+                                    <img src="./images/WSS02s.jpg" alt="">
+                                </figure>
+                            </div>
+                            <footer class="card-footer">
+                                <p class="card-footer-item">
+                                    Wall Shear Stress の高度な分析機能
+                                </p>
+                            </footer>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="content">
+                    <p style="color: #999999;">※画面は開発中のものを含みます</p>
+                </div>
+
+                <h2 class="title title-margin has-text-primary">
+                    Technology
+                </h2>
+
+                <div class="columns">
+                    <div class="column has-text-center">
+                        <p>
+                            hemoscope®はユーザーにとって直感的な、統合されたCFD血流解析ワークフローを提供します。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column is-8 is-offset-2 has-text-left">
+                        <div class="content">
+                            <figure class="image is-square">
+                                <img src="./images/workflow.png" alt="CFD Workflow">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns">
+                    <div class="column is-8 is-offset-2 has-text-left">
+                        <div class="content">
+                            <figure class="image is-square">
+                                <img src="./images/integration.png" alt="Integrated CFD Software">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns feature-margin">
+                    <div class="column is-2 has-text-left">
+                        <figure class="image is-square">
+                            <img src="./images/icon_vessel.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="column is-offset-1 is-9 has-text-left">
+                        <h2 class="subtitle">
+                            <span class="colored-label">
+                                血管形状・形態情報の分析
+                            </span>
+                        </h2>
+                        <div class="content">
+                            <p>
+                                CFD血流解析のための血管形状の最適化、ラべリング、形状の自動分析を実行します。<br>
+                                また、自動分析された血管形態情報がデータベース化されます。
+                            </p>
+
+                            <ul>
+                                <li>血管の中心線抽出</li>
+                                <li>血管の領域設定</li>
+                                <li>血管・病変のラベリング</li>
+                                <li>形状の自動計測</li>
+                                <ul>
+                                    <li>血管の平均径、最小径、最大径</li>
+                                    <li>血管の表面積、体積</li>
+                                    <li>脳動脈瘤のネック長</li>
+                                    <li>脳動脈瘤の高さ、アスペクト比、表面積、体積</li>
+                                </ul>
+                                <li>分析値のデータベース化</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns feature-margin">
+                    <div class="column is-2 has-text-left">
+                        <figure class="image is-square">
+                            <img src="./images/icon_cfd.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="column is-offset-1 is-9 has-text-left">
+                        <h2 class="subtitle">
+                            <span class="colored-label">
+                                自動化されたCFD解析計算
+                            </span>
+                        </h2>
+                        <div class="content">
+                            <p>
+                                CFD血流解析シミュレーション計算の全自動化を実現しています。<br>
+                                計算格子の生成、血液物性の入力、境界条件の入力、離算化スキームの選択、
+                                反復演算制御などのプロセスをソフトウェア内部で一括自動処理します。
+                            </p>
+
+                            <ul>
+                                <li>計算格子の自動生成</li>
+                                <li>血液物性の自動入力</li>
+                                <li>境界条件の自動入力</li>
+                                <li>反復演算の自動制御</li>
+                                <ul>
+                                    <li>定常流の迅速解析モード</li>
+                                    <li>拍動流の迅速解析モード</li>
+                                    <li>拍動流の高精度解析モード</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="columns feature-margin">
+                    <div class="column is-2 has-text-left">
+                        <figure class="image is-square">
+                            <img src="./images/icon_analysis.png" alt="">
+                        </figure>
+                    </div>
+                    <div class="column is-offset-1 is-9 has-text-left">
+                        <h2 class="subtitle">
+                            <span class="colored-label">
+                                流れ・壁面せん断応力の可視化・定量的分析
+                            </span>
+                        </h2>
+
+                        <div class="content">
+                            <p>
+                                血流の特徴をワンクリックで可視化します。<br>
+                                また、流量などの血行動態情報が自動的にデータベース化されます。
+                            </p>
+
+                            <ul>
+                                <li>可視化</li>
+                                <ul>
+                                    <li>血管壁圧力</li>
+                                    <li>壁面せん断応力（方向）</li>
+                                    <li>壁面せん断応力（大きさ）</li>
+                                    <li>流線</li>
+                                    <li>瞬時値、平均値、変動値分析</li>
+                                </ul>
+                                <li>データベース機能</li>
+                                <ul>
+                                    <li>血管の流量、せん断応力(最小、最大、平均)、圧力損失</li>
+                                    <li>脳動脈瘤の流入流量、せん断応力(最小、最大、平均)</li>
+                                    <li>平均値、瞬時値</li>
+                                </ul>
+                                <li>WSS（壁面せん断応力）の高度な分析機能</li>
+                                <ul>
+                                    <li>拍動流WSSの時間変動の分析機能</li>
+                                    <li>拍動流WSSの時間平均の分析機能</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <h2 class="title title-margin has-text-primary">
+                    Contact
+                </h2>
+                <p>
+                    御見積り・販売に関するお問い合わせは、アミン株式会社までお願い申し上げます。
+                </p>
+                <p class="inquiry">
+                    <a class="button is-primary is-outlined" href="https://www.hi-amin.co.jp/inquiry/">
+                        お問い合わせ（アミン株式会社）
+                    </a>
+                </p>
+
+                <div class="columns">
+                    <div class="column is-6 is-offset-3 has-text-left">
+
+                        <p>
+                            開発・製造：<a class="has-text-info" href="https://ebmc.jp">イービーエム株式会社</a><br>
+                            〒143-0013 東京都大田区大森南四丁目6番15号 テクノFRONT森ヶ崎 ５F
+                        </p>
+                        <figure class="image is-128x128" style="margin: 1em 0 1em 0;">
+                            <a href="https://ebmc.jp">
+                                <img src="./images/logo_ebm02.png" alt="">
+                            </a>
+                        </figure>
+
+                        <p>
+                            販売：<a class="has-text-info" href="https://www.hi-amin.co.jp">アミン株式会社</a><br>
+                            〒113-0033 東京都文京区本郷二丁目27番20号本郷センタービル３F<br>
+                            TEL 03-5689-2323
+                        </p>
+                        <figure class="image is-128x128" style="margin: 1em 0 1em 0;">
+                            <a href="https://www.hi-amin.co.jp">
+                                <img src="./images/logo_amin.png" alt="">
+                            </a>
+                        </figure>
+
+                        <p>
+                            研究連携：<a class="has-text-info" href="https://www.zio.co.jp">ザイオソフト株式会社</a><br>
+                        </p>
+                        <figure class="image is-128x128" style="margin: 1em 0 10em 0;">
+                            <a href="https://www.zio.co.jp">
+                                <img src="./images/logo_zio.png" alt="">
+                            </a>
+                        </figure>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="content has-text-centered">
+                © 2013-2021 EBM Corporation All Rights Reserved.
+            </div>
+            <div class="columns">
+                <div class="column is-10 is-offset-1">
+                    <p class="content is-small" style="color: #999999; font-size: 50%">
+                        本サイトで使用している製品および画面の写真は開発中のものです。仕様変更等により、予告なく変更される場合があります。
+                        Hemoscope® は研究用途を目的としたソフトウェアであり、診断治療等の臨床用途に使用することはできません。
+                        The Hemoscope software is not for clinical use. The Hemoscope software is intended for
+                        educational, research, and informational purposes only. The Hemoscope software is not an
+                        approved medical device.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

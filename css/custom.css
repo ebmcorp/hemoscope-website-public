@@ -1,0 +1,61 @@
+html,body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.hero.is-info {
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url('../images/streamline.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.hero .nav, .hero.is-success .nav {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.hero .site-title-container {
+  padding: 12rem 0 0 0;
+}
+
+.hero .title {
+  line-height: 1.6;
+}
+
+.hero .title-margin {
+  margin: 20rem 0 1rem 0;
+}
+
+.hero .feature-margin {
+  margin: 3rem 0 0 0;
+  line-height: 1.6;
+}
+
+.hero .subtitle .colored-label {
+  padding: 0.5rem 1.5rem;
+  background-color: #104E7E;
+  line-height: 2.6;
+  border-radius: 1em;	
+}
+
+.hero p {
+  line-height: 1.6;
+}
+
+.card-footer {
+  border: none;
+  background-color: #0b0b0b
+}
+
+.card-footer-item {
+  color: #999999;
+}
+
+.hero .inquiry {
+  padding: 6rem 0 8rem 0;
+  line-height: 1.5;
+}
